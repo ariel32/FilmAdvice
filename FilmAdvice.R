@@ -32,7 +32,7 @@ dt.tf <- TermDocumentMatrix(corpus)
 dt.tfidf <- weightTfIdf(dt.tf, normalize = TRUE)
 dimnames(dt.tfidf)$Docs <- c("ED", "SM", "TM", "EQ")
 
-#install.packages("lsa")
+#install.packages("lsa") 
 library(lsa) # пакет, содержащий функцию для расчета косинусного сходства
 
 # Расчет косинусного сходства для всех пар документов:
